@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IBM+Plex+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --orange: #fb4b29;
+  --yellow: #ffc833;
+  --dark-drey: #565656;
+  --light-grey: #979797;
+  --cream: #ffd6ae;
+  --lime-green: #9ed065;
+  --dark-pink: #a1034a;
+  --dark-blue: #1b4f87;
+  --greyish-blue: #2d5f84;
+  --brown: #ab2f3e;
+  --very-dark-blue: #1a2229;
+  --bg-color: #1b212c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 10ms ease-in;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: url("/images/logo\ copy.svg") no-repeat top, var(--bg-color);
+  background-position-x: 2vw;
+  background-position-y: -15vh;
+  background-size: 1900px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  width: 8rem;
+}
+
+.h-img {
+  transform: matrix(-0.9, 0.43, 0.43, 0.9, 0, 0);
+  height: 45rem;
+}
+
+.Hero__image {
+  margin-top: -10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 1000px;
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.sneakers {
+  width: 8rem;
+  height: 5;
+  margin-left: -3rem;
+}
+.ratings {
+  width: 1rem;
+}
+.shopping-cart {
+  background: var(--light-grey);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 13px;
+}
+
+i:hover {
+  border: solid var(--orange);
+  border-width: 0 3px 3px 0;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* typo */
+.para-heading {
+  margin: 0.5rem 0;
+}
+
+.big-heading {
+  font-size: 6rem;
+  color: var(--cream);
+  font-family: "IBM Plex Mono", monospace;
+}
+.med-heading {
+  font-size: 1.5rem;
+  color: white;
+}
+.slim-heading {
+  font-family: "Gowun Dodum", sans-serif;
+}
+.para {
+  color: white;
+}
+.price {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.product__label-name {
+  color: var(--dark-drey);
+  font-size: 0.9rem;
+}
+.product__label-price {
+  color: var(--light-grey);
+  font-weight: 900;
+  font-size: 1rem;
+}
+.product__label-description {
+  color: var(--light-grey);
+  font-weight: 700;
+}
+.cart {
+  color: var(--orange);
+  text-align: center;
+  font-weight: 700;
+}
+.h-bar {
+  height: 20px;
+  width: 2px;
+  background: white;
+}
+/* buttons */
+button {
+  width: 8rem;
+  color: white;
+  border-radius: 5px;
+  height: 2.2rem;
+  font-weight: 600;
+}
+.primary-btn {
+  width: 8rem;
+  background: inherit;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+.secondary-btn {
+  background: var(--orange);
+  height: 2rem;
+  width: 12rem;
+  margin: 1.3rem 0;
+  border: transparent;
+}
+
+/* JOINT STYLES */
+
+.flex-normal {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+/* Navbar */
+.Navbar {
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+.bar {
+  height: 2px;
+  background: white;
+  width: 15px;
+  margin: 5px 0;
+}
+.one {
+  margin-left: 15px;
+}
+.two {
+  width: 33px;
+}
+.three {
+  margin-right: 30px;
+}
+
+.Navbar__links {
+  font-weight: 600;
+  color: white;
+}
+
+.Navbar__links:hover {
+  color: var(--dark-drey);
+  border-bottom: 2px solid var(--dark-drey);
+}
+
+.Navbar__items {
+  gap: 2rem;
+}
+/* HERO */
+.Hero {
+  justify-content: space-around;
+  margin: 3rem 0 1rem 0;
+}
+.Hero__text {
+  width: 35rem;
+  margin-right: -10rem;
+}
+.rating-section {
+  gap: 10px;
+}
+.Hero__image-caption-section {
+  gap: 10px;
+  margin-top: -5rem;
+  align-self: center;
+}
+.Hero__image-caption {
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* product section */
+.product-section {
+  display: flex;
+  justify-content: flex-end;
+}
+.product {
+  justify-content: space-between;
+  background: white;
+  margin: 2rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  max-width: fit-content;
+  height: max-content;
+}
+.product__image {
+  width: 6rem;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.product__label {
+  max-width: 15rem;
+  padding: 0 10px 0 0;
+}
+.image-one {
+  background: var(--orange);
+  height: 6rem;
+}
+
+.image-two {
+  background: var(--greyish-blue);
+  height: 6rem;
+}
+.image-three {
+  background: var(--lime-green);
+}
+.image-four {
+  background: var(--dark-blue);
+  max-width: 100%;
+}
+/* footer */
+.footer {
+  position: fixed;
+  left: 30px;
+  top: 200px;
+  writing-mode: vertical-lr;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.footer__links {
+  transform: rotate(180deg);
+  font-size: 1.1rem;
+}
+
+.icons-section {
+  position: fixed;
+  bottom: 35px;
+  left: 30px;
+}
+
+.social-icons {
+  width: 1.6rem;
+}
+
+.main {
+  margin-left: 5rem;
+}
